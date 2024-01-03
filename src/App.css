@@ -1,0 +1,10 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-weight:100;thin
+font-weight:300;light
+font-weight:400;regular
+font-weight:700;bold
+*/
+html, body, *{font-family:'Roboto', sans-serif;font-weight:400;}
+.logo{font-weight:100;}
+.logo-bold{font-weight:700;}
