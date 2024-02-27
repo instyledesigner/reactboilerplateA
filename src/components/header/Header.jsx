@@ -4,7 +4,7 @@ import HeaderMenu from './HeaderMenu'
 
 const Header = () => {
   return (
-    <div>
+    <div className=''>
       <HeaderLogo />
       <HeaderMenu />
     </div>

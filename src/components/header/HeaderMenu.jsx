@@ -20,6 +20,7 @@ const HeaderMenu = () => {
             <li><Link to='/investors/news'>News</Link></li>
             <li><Link to='/investors/events'>Events</Link></li>
             <li><Link to='/investors/shareprice'>SharePrice</Link></li>
+            <li><Link to='/investors/quarterlyreports'>QuarterlyReports</Link></li>
           </ul>
         </li>
         <li><Link to='/contactus'>Contact Us</Link>

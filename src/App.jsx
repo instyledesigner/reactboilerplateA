@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import './App.css'
+import './styles/main.scss'
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
@@ -13,10 +13,12 @@ import History from './pages/History'
 import BOD from './pages/BOD'
 import Investors from './pages/Investors'
 import News from './pages/News'
+import NewsItem from './pages/NewsItemN'
 import Events from './pages/Events'
 import SharePrice from './pages/SharePrice'
 import ContactUs from './pages/ContactUs'
 import FAQ from './pages/FAQ'
+import QuarterlyReports from './pages/QuarterlyReports';
 
 function App() {
 
@@ -26,13 +28,20 @@ function App() {
       <Header />
         <Routes>
           <Route path='/' element={<Home />} />
+          
           <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/aboutus/history' element={<History />} />
           <Route path='/aboutus/bod' element={<BOD />} />
+          
           <Route path='/investors' element={<Investors />} />
+          
           <Route path='/investors/news' element={<News />} />
+          <Route path="/investors/news/:id" element={<NewsItem />} />
+          
           <Route path='/investors/events' element={<Events />} />
           <Route path='/investors/shareprice' element={<SharePrice />} />
+          <Route path='/investors/quarterlyreports' element={<QuarterlyReports /> } />
+          
           <Route path='/contactus' element={<ContactUs />} />
           <Route path='/contactus/faq' element={<FAQ />} />
 

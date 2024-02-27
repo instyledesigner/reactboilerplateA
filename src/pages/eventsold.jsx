@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import EventsData from './EventsData';
 import MetaHelmet from '../components/metahelmet/MetaHelmet'
 import Breadcrumb from '../components/breadcrumb/Breadcrumb'
+import EventsData from './EventsData';
 
 const Events = () => {
 
@@ -33,8 +33,11 @@ const Events = () => {
       <MetaHelmet metaTitle='Events' metaDescription='meta description events page' />
       <Breadcrumb />
       
+      
+
 
       <div className=''>
+      <InnerBanner pagetitle='Events' />
       <div className='container pt-5'>
         <div className='row _pt-4 _bg-dark'>
           <div className='col-xs-12 mb-4 '>
